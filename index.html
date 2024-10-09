@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <style>
+      .sr-only {
+        position: absolute;
+        display: block;
+        cursor: text;
+        margin: -1px 0 0 -1px;
+        padding: 0;
+        width: 1px;
+        height: 1px;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+        outline: 0;
+      }
+
+      .link-group {
+        margin-bottom: 20px;
+      }
+
+      .link-group h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        color: #333;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+    </style>
+
+    <!-- Group 1: Unordered List with different variations of Yelp links -->
+    <div class="link-group">
+      <h3>Unordered List with Yelp Links and sr-only Variations</h3>
+      <ul class="ul-sr-only-links">
+        <li
+          id="ullink1"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul 1 Link Frida<span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="ullink2yelpsro"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul Link 2 yelp in sr-only<span class="sr-only">yelp</span></a
+          >
+        </li>
+        <li
+          id="ullink3notargetyelp"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul Link 3 yelp in sr-only and target blank
+            <span class="sr-only">yelp</span></a
+          >
+        </li>
+        <li
+          id="ullin4noariayelp"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >ul Link 4 yelp in sr-only and no aria<span class="sr-only"
+              >yelp</span
+            ></a
+          >
+        </li>
+        <li
+          id="ullink5notarget"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul Link 5 no target attribute removed
+            <span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="ullink6"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul Link 6 without https <span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="ullink7"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="#"
+            aria-label="Same Place"
+            tabindex="-1"
+            >ul link 7 hash url <span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="ullink8"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >ul link 8 no aria-label span new window<span class="sr-only"
+              >new window</span
+            ></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Group 2: Another unordered list for different reservation link variations -->
+    <div class="link-group">
+      <h3>Unordered List with Reservation Links</h3>
+      <ul class="ul-similar-links">
+        <li
+          id="reservations-copy"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >Reservations copy<span class="sr-only">new window yelp</span></a
+          >
+        </li>
+        <li
+          id="reservation_no_aria&target"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >Reservations no target & aria
+            <span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="reservation_no_aria&target_yelpsro"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >Reservations no target & aria + yelp</a
+          >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            ><span class="sr-only">yelp</span></a
+          >
+        </li>
+
+        <li
+          id="reservation_no_target"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >Reservations no target<span class="sr-only">new window</span></a
+          >
+        </li>
+        <li
+          id="resevrations-yelp"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >Reservations<span class="sr-only">yelp</span></a
+          >
+        </li>
+        <li
+          id="reservations_suggested_fix"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            tabindex="-1"
+            >accessFlow Suggested Fix<span class="sr-only">yelp</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Group 3: Footer Links with various pages and contact details -->
+    <h2>Client: Fridaamerica</h2>
+    <div class="link-group">
+      <h3>Footer Links</h3>
+      <footer>
+        <ul id="menu-footer-menu" class="footer_menu">
+          <li
+            id="menu-item-2273"
+            class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-2156 current_page_item menu-item-2273"
+          >
+            <a
+              href="https://www.fridaamericana.com/about-us/"
+              aria-current="page"
+              tabindex="-1"
+              >About Us</a
+            >
+          </li>
+          <li
+            id="menu-item-2178"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2178"
+          >
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=Frida+Mexican+Cuisine+750+Americana+Way+Glendale+CA+91210+United+States"
+              aria-label="Frida Mexican Cuisine’s Directions (opens in a new tab)"
+              tabindex="-1"
+              >Direction<span class="sr-only">new window</span></a
+            >
+          </li>
+          <li
+            id="menu-item-2175"
+            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+          >
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+              tabindex="-1"
+              >Reservations<span class="sr-only">new window</span></a
+            >
+          </li>
+          <li
+            id="menu-item-2177"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2177"
+          >
+            <a
+              href="https://www.fridaamericana.com/terms-and-conditions/"
+              tabindex="-1"
+              >Terms &amp; Conditions</a
+            >
+          </li>
+          <li
+            id="menu-item-2176"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2176"
+          >
+            <a
+              href="https://www.fridaamericana.com/privacy-policy/"
+              tabindex="-1"
+              >Privacy Policy</a
+            >
+          </li>
+          <li
+            id="menu-item-3556"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3556"
+          >
+            <a href="https://www.fridaamericana.com/contact-us/" tabindex="-1"
+              >Contact Us</a
+            >
+          </li>
+          <li
+            id="menu-item-2167"
+            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2167"
+          >
+            <a href="https://www.fridaamericana.com/sitemap/" tabindex="-1"
+              >Sitemap</a
+            >
+          </li>
+        </ul>
+      </footer>
+    </div>
+
+    <div class="link-group">
+      <h3>Unordered List with Yelp Links and sr-only Variations</h3>
+      <ul class="ul-sr-only-links">
+        <li
+          id="ullink1"
+          class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2175"
+        >
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://www.yelp.com/reservations/frida-mexican-cuisine-glendale-8?source=widget"
+            aria-label="Online Reservations (opens in a new tab)"
+            tabindex="-1"
+            >ul 1 Link Frida<span class="sr-only">new window</span></a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Group 2: Links inside a <p> (paragraph) element -->
+    <div class="link-group">
+      <h3>Links Inside Paragraphs</h3>
+      <p>
+        This is an example of a paragraph with an embedded link to
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Google (opens in a new tab)"
+          tabindex="-1"
+          >Google<span class="sr-only">new window</span></a
+        >. The link will open in a new tab.
+      </p>
+
+      <p>
+        Another example where the link goes to
+        <a href="https://www.bing.com" rel="noopener" tabindex="-1"
+          >Bing<span class="sr-only">new window</span></a
+        >, but without an aria-label or target attribute.
+      </p>
+    </div>
+
+    <!-- Group 3: Links inside <div> elements -->
+    <div class="link-group">
+      <h3>Links Inside Div Elements</h3>
+      <div>
+        Here's a link inside a div element pointing to
+        <a
+          href="https://www.example.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Example Website (opens in a new tab)"
+          tabindex="-1"
+          >Example.com<span class="sr-only">new window</span></a
+        >.
+      </div>
+
+      <div>
+        This div contains a link to
+        <a
+          href="https://www.wikipedia.org"
+          rel="noopener"
+          aria-label="Wikipedia (opens in a new tab)"
+          tabindex="-1"
+          >Wikipedia<span class="sr-only">new window</span></a
+        >
+        without target="_blank".
+      </div>
+    </div>
+
+    <!-- Group 4: Links inside heading elements -->
+    <div class="link-group">
+      <h3>Links Inside Heading Elements</h3>
+      <h2>
+        Visit our
+        <a
+          href="https://www.yelp.com"
+          rel="noopener"
+          aria-label="Yelp (opens in a new tab)"
+          tabindex="-1"
+          >Yelp page<span class="sr-only">new window</span></a
+        >
+      </h2>
+
+      <h3>
+        Check out
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener"
+          aria-label="Facebook (opens in a new tab)"
+          tabindex="-1"
+          >Facebook<span class="sr-only">new window</span></a
+        >
+      </h3>
+    </div>
+
+    <!-- Group 5: Unordered List with mixed content links -->
+    <div class="link-group">
+      <h3>Unordered List with Mixed Content Links</h3>
+      <ul class="ul-mixed-links">
+        <li>
+          Visit our main website:
+          <a
+            href="https://www.fridaamericana.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="Frida Americana (opens in a new tab)"
+            tabindex="-1"
+            >Frida Americana<span class="sr-only">new window</span></a
+          >
+        </li>
+        <li>
+          Directions:
+          <a
+            href="https://www.google.com/maps"
+            target="_blank"
+            rel="noopener"
+            aria-label="Google Maps Directions (opens in a new tab)"
+            tabindex="-1"
+            >Google Maps<span class="sr-only">new window</span></a
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
