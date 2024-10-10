@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
+    <title>Link Context</title>
   </head>
   <body>
     <style>
@@ -50,7 +50,8 @@
       }
     </style>
 
-    <!-- Group 1: Unordered List with different variations of Yelp links -->
+    <h1>Link Context Rule Testing</h1>
+    <h2>Link Variations</h2>
     <div class="link-group">
       <h3>Unordered List with Yelp Links and sr-only Variations</h3>
       <ul class="ul-sr-only-links">
@@ -162,8 +163,8 @@
         </li>
       </ul>
     </div>
-
-    <!-- Group 2: Another unordered list for different reservation link variations -->
+</hr>
+    <h2> Another unordered list for different reservation link variations</h2>
     <div class="link-group">
       <h3>Unordered List with Reservation Links</h3>
       <ul class="ul-similar-links">
@@ -245,11 +246,11 @@
         </li>
       </ul>
     </div>
-
-    <!-- Group 3: Footer Links with various pages and contact details -->
-    <h2>Client: Fridaamerica</h2>
+<hr>
+ <h2> Footer Links with various pages and contact details</h2>  
+    <h3>Client: Fridaamerica</h3>
     <div class="link-group">
-      <h3>Footer Links</h3>
+      <h4>Footer Links</h4>
       <footer>
         <ul id="menu-footer-menu" class="footer_menu">
           <li
@@ -327,7 +328,8 @@
         </ul>
       </footer>
     </div>
-
+<hr>
+    
     <div class="link-group">
       <h3>Unordered List with Yelp Links and sr-only Variations</h3>
       <ul class="ul-sr-only-links">
@@ -346,8 +348,7 @@
         </li>
       </ul>
     </div>
-
-    <!-- Group 2: Links inside a <p> (paragraph) element -->
+<hr>
     <div class="link-group">
       <h3>Links Inside Paragraphs</h3>
       <p>
@@ -369,8 +370,7 @@
         >, but without an aria-label or target attribute.
       </p>
     </div>
-
-    <!-- Group 3: Links inside <div> elements -->
+<hr>
     <div class="link-group">
       <h3>Links Inside Div Elements</h3>
       <div>
@@ -397,8 +397,7 @@
         without target="_blank".
       </div>
     </div>
-
-    <!-- Group 4: Links inside heading elements -->
+<hr>
     <div class="link-group">
       <h3>Links Inside Heading Elements</h3>
       <h2>
@@ -425,7 +424,7 @@
       </h3>
     </div>
 
-    <!-- Group 5: Unordered List with mixed content links -->
+ <hr>
     <div class="link-group">
       <h3>Unordered List with Mixed Content Links</h3>
       <ul class="ul-mixed-links">
@@ -453,7 +452,7 @@
         </li>
       </ul>
     </div>
-
+<hr>
     <h3>Client: Sentry.io Social Links</h3>
     <ul style="size: 24px">
       <a
@@ -554,7 +553,7 @@
         ><span class="silent css-17qgsod e1of9yu11">Discord</span></a
       >
     </ul>
-
+<hr>
     <h3>Sentry io: descriptive links in the middle of a a paragraph</h3>
     <p>Once you have enabled the User Feedback widget, make sure you <a href="https://docs.sentry.io/product/user-feedback/#getting-user-feedback-alerts">set up alerts</a> so you don't miss any submissions from your users.</p>
 
@@ -604,5 +603,60 @@
     <p>
   Have questions? <a href="https://www.example.com/faq">Check out our frequently asked questions</a> to find answers.
 </p>
+    <hr>
+    <h3>Email Links</h3>
+    <!-- Basic Email Link -->
+<h4>Basic Email Link</h4>
+<a href="mailto:support@example.com">support@example.com</a>
+<!-- Opens the default email client with the "To" field pre-filled. -->
+
+<br/>
+
+<!-- Email Link with Subject -->
+<h4>Email Link with Subject</h4>
+<a href="mailto:support@example.com?subject=Support%20Request">support@example.com</a>
+<!-- Opens the email client with the "To" field pre-filled and the subject set to "Support Request". -->
+
+<br/>
+
+<!-- Email Link with Body Content -->
+<h4>Email Link with Body Content</h4>
+<a href="mailto:support@example.com?subject=Support%20Request&body=Please%20describe%20your%20issue.">support@example.com</a>
+<!-- Pre-fills both the subject line and body of the email. -->
+
+<br/>
+
+<!-- Email Link with CC and BCC -->
+<h4>Email Link with CC and BCC</h4>
+<a href="mailto:support@example.com?cc=admin@example.com&bcc=ceo@example.com">support@example.com</a>
+<!-- Includes other recipients in the CC and BCC fields. -->
+
+<br/>
+
+<!-- Email Link with Referrer Information -->
+<h4>Email Link with Referrer Information</h4>
+<a href="mailto:support@example.com?subject=Support%20Request&referrer=website">support@example.com</a>
+<!-- Passes custom parameters (like referrer) to provide additional context. -->
+
+<br/>
+
+<!-- Email Link with Multiple Recipients -->
+<h4>Email Link with Multiple Recipients</h4>
+<a href="mailto:support@example.com,helpdesk@example.com">support@example.com</a>
+<!-- Sends an email to multiple recipients. -->
+
+<br/>
+
+<!-- Email Link with Escape Characters for Special Symbols -->
+<h4>Email Link with Escape Characters for Special Symbols</h4>
+<a href="mailto:support@example.com?subject=Support%20Request%20-%20Urgent&body=Please%20respond%20ASAP.">support@example.com</a>
+<!-- Encodes special characters (like spaces) to ensure proper display. -->
+
+<br/>
+
+<!-- Email Link with Email Signature in Body -->
+<h4>Email Link with Email Signature in Body</h4>
+<a href="mailto:support@example.com?subject=Support%20Request&body=Please%20describe%20your%20issue.%0D%0A%0D%0ARegards,%0D%0AJohn%20Doe">support@example.com</a>
+<!-- Pre-fills the email body with line breaks and a signature. -->
   </body>
 </html>
